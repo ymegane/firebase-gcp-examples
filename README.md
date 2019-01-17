@@ -16,11 +16,11 @@ Firebase & GCP examples exploring FaaS with <a href="https://firebase.google.com
 
 <p align="center">
     <em>
-      :spiral_notepad: <a href="#notes">notes on examples</a>
-      · :wrench: <a href="#code-compat">code compatibility</a>
-      · :family_man_woman_girl_boy: <a href="#contribs">contributions</a>
-      · :computer: <a href="#dev-tools">developer tools used</a>
-      · :man_technologist: <a href="#find-me">find me</a>
+      🗒 <a href="#notes">notes on examples</a>
+      · 🔧 <a href="#code-compat">code compatibility</a>
+      · 👨‍👩‍👧‍👦 <a href="#contribs">contributions</a>
+      · 💻 <a href="#dev-tools">developer tools used</a>
+      · 👨‍💻 <a href="#find-me">find me</a>
     </em>
 </p>
 
@@ -56,17 +56,17 @@ Legend: 📚 Theory, 💻 Examples & 💬 Comments.
 | GraphQL Server on GCP Cloud Functions                                                                                                                                     | [gcp-functions-graphql](/gcp-functions-graphql)                                                                                     |
 | []()                                                                                                                                                                      | [](/)                                                                                                                               |
 
-<h2 id="notes">:spiral_notepad: notes on examples</h2>
+<h2 id="notes">🗒 notes on examples</h2>
 
 These examples use [Yarn](https://yarnpkg.com/) for all npm scripts, so either install Yarn or replace all uses of `yarn` in the scripts with `npm run`.
 
 I use [asdf](https://github.com/asdf-vm/asdf) to manage my Node runtimes. Some examples require specific Node versions, see the `.tool-versions` file or use this tool to get the exact versions.
 
-<h2 id="code-compat">:wrench: code compatibility</h2>
+<h2 id="code-compat">🔧 code compatibility</h2>
 
 Everything was tested on Ubuntu 18.10. If you wish for Windows native support please [submit an issue](https://github.com/jthegedus/firebase-gcp-examples/issues/new) so we can work on a Windows branch. Please report any macOS errors as I do not have access to a device to test. [My development environment can be found here](https://github.com/jthegedus/dotfiles).
 
-<h2 id="contribs">:family_man_woman_girl_boy: contributions</h2>
+<h2 id="contribs">👨‍👩‍👧‍👦 contributions</h2>
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
@@ -83,13 +83,13 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 
 If you have a request please open an issue so we can discuss how & why it should be implemented.
 
-<h2 id="dev-tools">:computer: developer tools used</h2>
+<h2 id="dev-tools">💻 developer tools used</h2>
 
 - [asdf](https://github.com/asdf-vm/asdf) - extendable version manager with support for Node, OCaml, Ruby, Go, Python and more!
 - [Yarn](https://github.com/yarnpkg/yarn) - NodeJS package manager
 - [PrettierJS](https://prettier.io/) - Opinionated Code Formatter.
 
-<h2 id="find-me">:man_technologist: find me...</h2>
+<h2 id="find-me">👨‍💻 find me...</h2>
 
 <ul>
   <li><a href="https://medium.com/@jthegedus">:writing_hand: medium</a></li>
