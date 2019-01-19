@@ -1,0 +1,12 @@
+type User @GQLifyModel(dataSource: "firestore", key: "users") {
+  id: ID! @unique @autoGen # auto generate unique id
+  username: String!
+  email: String
+  books: [Book!]! # User-Book: one-to-many
+}
+
+type Book @GQLifyModel(dataSource: "firestore", key: "books") {
+  id: ID! @unique @autoGen # auto generate unique id
+  name: String!
+  author: User!
+}
