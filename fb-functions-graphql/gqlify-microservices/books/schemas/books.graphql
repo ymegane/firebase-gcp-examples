@@ -1,0 +1,5 @@
+type Book @GQLifyModel(dataSource: "firestore", key: "books") {
+  id: ID! @unique @autoGen # auto generate unique id
+  name: String!
+  author: User!
+}
