@@ -1,16 +1,13 @@
 {
-  "hosting": [
-    {
-      "target": "serverless-next",
-      "public": "public",
-      "rewrites": [
-        {
-          "source": "**/**",
-          "function": "nextjs-server"
-        }
-      ]
-    }
-  ],
+  "hosting": {
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "**/**",
+        "function": "nextjs-server"
+      }
+    ]
+  },
   "functions": {
     "source": ".",
     "ignore": [

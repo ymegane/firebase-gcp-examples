@@ -10,7 +10,16 @@ const server = functions.https.onRequest((request, response) => {
   console.log("dev:", dev);
   // log the page.js file or resource being requested
 
-  return nextApp.prepare().then(() => handle(request, response));
+  // if the url contains _next, then return old nextApp.prepare() impl
+  // else, return the serverless redirect
+
+  const page = request.originalUrl === "/" ? "index" : request.originalUrl;
+  console.info("page", page);
+  return require(`../client/serverless/pages/${page}`).render(
+    request,
+    response
+  );
+  // return nextApp.prepare().then(() => handle(request, response));
 });
 
 const nextjs = {

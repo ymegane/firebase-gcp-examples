@@ -4,30 +4,30 @@
   "main": "dist/server/index.js",
   "license": "MIT",
   "scripts": {
-    "compile:client": "next build src/client",
-    "compile:server": "babel src/server --out-dir dist/server --source-maps",
-    "compile": "yarn compile:client && yarn compile:server",
+    "build:client": "next build src/client",
+    "build:server": "babel src/server --out-dir dist/server --source-maps",
+    "build": "yarn build:client && yarn build:server",
     "watch:client": "next src/client",
     "watch:server": "babel src/server --out-dir dist/server --source-maps --watch",
     "watch": "yarn watch:client & yarn watch:server",
     "serve": "cross-env NODE_ENV=production yarn firebase serve --only functions:nextjs,hosting",
-    "predeploy": "rimraf dist/ && yarn compile",
+    "predeploy": "rimraf dist/ && yarn build",
     "deploy": "yarn firebase deploy --only functions:nextjs,hosting"
   },
   "dependencies": {
-    "firebase-admin": "^6.4.0",
-    "firebase-functions": "^2.1.0",
-    "next": "^7.0.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "firebase-admin": "^7.0.0",
+    "firebase-functions": "^2.2.0",
+    "next": "^8.0.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.0",
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
     "cross-env": "^5.2.0",
-    "firebase-tools": "^6.1.2",
-    "rimraf": "^2.6.2"
+    "firebase-tools": "^6.3.1",
+    "rimraf": "^2.6.3"
   },
   "engines": {
     "node": "8"
