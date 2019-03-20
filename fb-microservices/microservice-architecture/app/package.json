@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "yarn firebase deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "firebase-tools": "^6.3.1"
+  }
+}
