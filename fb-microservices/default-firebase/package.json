@@ -1,0 +1,13 @@
+{
+  "name": "default-firebase",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build:functions": "cd functions && yarn && yarn build",
+    "predeploy": "yarn build:functions",
+    "deploy": "yarn firebase deploy"
+  },
+  "devDependencies": {
+    "firebase-tools": "^6.3.1"
+  }
+}
