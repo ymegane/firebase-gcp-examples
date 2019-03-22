@@ -1,0 +1,13 @@
+{
+  "name": "microservice-architecture",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn lerna run build --stream",
+    "deploy": "yarn lerna run deploy --stream"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.1"
+  }
+}
